@@ -1,0 +1,17 @@
+# Arquivo de exemplo - Códigos promocionais do Warframe
+# Formato: um código por linha
+# Remova o # do início das linhas para usar os códigos
+
+# Exemplos de códigos (substitua pelos códigos reais):
+# FREESWORD
+# PRIME
+# WARFRAME
+# TENNO
+# 2024
+# COMMUNITY
+
+# Instruções:
+# 1. Remova o # do início das linhas dos códigos que deseja usar
+# 2. Adicione seus próprios códigos promocionais
+# 3. Salve o arquivo como 'codigos.txt'
+# 4. Use este arquivo no TennoCodeHunter 
