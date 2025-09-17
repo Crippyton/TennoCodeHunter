@@ -1,0 +1,138 @@
+# ==============================================
+# Template .gitattributes para Detecção Correta de Linguagens
+# ==============================================
+
+# Ignorar arquivos de configuração que distorcem as estatísticas
+*.json linguist-detectable=false
+*.xml linguist-detectable=false
+*.yml linguist-detectable=false
+*.yaml linguist-detectable=false
+*.toml linguist-detectable=false
+*.ini linguist-detectable=false
+*.cfg linguist-detectable=false
+*.conf linguist-detectable=false
+*.config linguist-detectable=false
+
+# Ignorar arquivos de build e package managers
+package-lock.json linguist-generated=true
+yarn.lock linguist-generated=true
+Pipfile.lock linguist-generated=true
+composer.lock linguist-generated=true
+Gemfile.lock linguist-generated=true
+*.min.js linguist-generated=true
+*.min.css linguist-generated=true
+*.bundle.js linguist-generated=true
+*.bundle.css linguist-generated=true
+
+# Diretórios de dependências e builds
+node_modules/* linguist-vendored
+vendor/* linguist-vendored
+dist/* linguist-vendored
+build/* linguist-vendored
+.next/* linguist-vendored
+.nuxt/* linguist-vendored
+target/* linguist-vendored
+bin/* linguist-vendored
+obj/* linguist-vendored
+packages/* linguist-vendored
+venv/* linguist-vendored
+env/* linguist-vendored
+__pycache__/* linguist-generated
+
+# Assets e recursos estáticos
+assets/* linguist-vendored
+static/* linguist-vendored
+public/* linguist-vendored
+images/* linguist-vendored
+img/* linguist-vendored
+fonts/* linguist-vendored
+*.png linguist-generated=false
+*.jpg linguist-generated=false
+*.jpeg linguist-generated=false
+*.gif linguist-generated=false
+*.svg linguist-detectable=false
+
+# Documentação (para não aparecer como linguagem principal)
+*.md linguist-documentation
+*.txt linguist-documentation
+*.rst linguist-documentation
+docs/* linguist-documentation
+doc/* linguist-documentation
+
+# Arquivos que geram falsos positivos
+*.gitignore linguist-detectable=false
+*.dockerignore linguist-detectable=false
+Dockerfile linguist-detectable=false
+docker-compose.yml linguist-detectable=false
+*.env linguist-detectable=false
+*.env.example linguist-detectable=false
+
+# Corrigir detecção incorreta de C/C++
+*.h linguist-detectable=false
+*.hpp linguist-detectable=false
+*.c linguist-detectable=true
+*.cpp linguist-detectable=true
+*.cc linguist-detectable=true
+*.cxx linguist-detectable=true
+
+# Forçar detecção das linguagens principais
+*.py linguist-detectable=true
+*.js linguist-detectable=true
+*.ts linguist-detectable=true
+*.jsx linguist-detectable=true
+*.tsx linguist-detectable=true
+*.vue linguist-detectable=true
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.scss linguist-detectable=true
+*.sass linguist-detectable=true
+*.less linguist-detectable=true
+*.php linguist-detectable=true
+*.java linguist-detectable=true
+*.cs linguist-detectable=true
+*.go linguist-detectable=true
+*.rs linguist-detectable=true
+*.rb linguist-detectable=true
+*.swift linguist-detectable=true
+*.kt linguist-detectable=true
+*.dart linguist-detectable=true
+*.r linguist-detectable=true
+*.R linguist-detectable=true
+*.sql linguist-detectable=true
+
+# Linguagens específicas que podem ser mal interpretadas
+*.pyx linguist-language=Cython
+*.pxd linguist-language=Cython
+*.pxi linguist-language=Cython
+
+# Shell scripts e automação
+*.sh linguist-detectable=true
+*.bash linguist-detectable=true
+*.zsh linguist-detectable=true
+*.fish linguist-detectable=true
+*.ps1 linguist-detectable=true
+*.bat linguist-detectable=true
+*.cmd linguist-detectable=true
+
+# Ignorar arquivos de IDEs
+.vscode/* linguist-vendored
+.idea/* linguist-vendored
+*.iml linguist-detectable=false
+*.user linguist-detectable=false
+*.suo linguist-detectable=false
+*.sln linguist-detectable=false
+*.csproj linguist-detectable=false
+*.vbproj linguist-detectable=false
+
+# Ignorar logs e temporários
+*.log linguist-detectable=false
+*.tmp linguist-detectable=false
+*.temp linguist-detectable=false
+*.cache linguist-detectable=false
+
+# Testes (opcional - descomente se não quiser que testes sejam contados)
+# *test*.py linguist-detectable=false
+# *test*.js linguist-detectable=false
+# *spec*.js linguist-detectable=false
+# test/* linguist-detectable=false
+# tests/* linguist-detectable=false
